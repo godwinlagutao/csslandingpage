@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <section class="sec">
+        <header> 
+            <a href="#" ><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis numquam nulla cupiditate architecto exercitationem facilis quia nostrum eum voluptates corrupti ipsam nemo odio modi amet eaque, nesciunt laborum culpa natus explicabo reprehenderit voluptatum. 
+                   Ipsa eaque adipisci nobis provident est consequatur, incidunt, rem dolor ducimus distinctio vitae temporibus eveniet soluta? Velit eaque mollitia maxime saepe rem libero facere, nisi asperiores provident magni.
+                   Quis quas culpa consequuntur labore commodi quidem eum qui cum molestiae. Optio a praesentium cumque asperiores. Velit repellendus, ex aspernatur veniam laboriosam neque? Modi laudantium rerum doloremque natus commodi ad sint impedit dolore suscipit amet. Vitae sint modi vero.</p>
+            <a href="#">View All Products</a>
+             </div>
+             <div class="imgBox">
+                <img src="images/pepsi001.png" class="pepsi">
+             </div>
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/pepsi001.png" onclick="imgSlider('images/pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="images/pepsi002.png" onclick="imgSlider('images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="images/pepsi003.png" onclick="imgSlider('images/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+            
+
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+
+    </script>
+    
+</body>
+</html>
